@@ -1,0 +1,24 @@
+    {
+    "version": 2,
+    "name": "link-tracker-frontend",
+    "builds": [
+        {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+            "distDir": "build"
+        }
+        }
+    ],
+    "routes": [
+        {
+        "src": "/(.*)",
+        "dest": "/index.html"
+        }
+    ],
+    "env": {
+        "REACT_APP_API_URL": "@react_app_api_url",
+        "REACT_APP_SUPABASE_URL": "@react_app_supabase_url",
+        "REACT_APP_SUPABASE_ANON_KEY": "@react_app_supabase_anon_key"
+    }
+    }

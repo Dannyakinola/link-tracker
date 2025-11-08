@@ -8,7 +8,7 @@ const { nanoid } = require('nanoid');
 const bcrypt = require('bcryptjs');
 const geoip = require('geoip-lite');
 const UAParser = require('ua-parser-js');
-const { supabase, supabaseAdmin } = require('C:\Users\HP\Documents\Link tracker\Backend\src\Services\supabase.js');
+const { supabase, supabaseAdmin } = require('./src/Services/supabase.js');
 
 const app = express();
 

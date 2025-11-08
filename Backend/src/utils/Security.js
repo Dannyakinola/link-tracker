@@ -1,5 +1,5 @@
     const bcrypt = require('bcryptjs');
-    const { supabase } = require('../services/supabase');
+    const { supabase } = require('../Services/supabase');
 
     /**
      * Hash password for link protection
